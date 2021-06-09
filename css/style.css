@@ -10,6 +10,8 @@ a {
 .section_wrapper {
   display: flex;
   justify-content: center;
+  width: 100%;
+  z-index: 0;
 }
 .content_wrapper {
   max-width: 1200px;
@@ -30,17 +32,15 @@ a {
 /* --------------------------------------------------------- */
 /* header
 /* --------------------------------------------------------- */
-.header {
+#header {
   background-color: #1B1310;
-  position: absolute;
-  width: 100%;
   height: 74px;
+  position: absolute; /* fvと合わせて100vhに収めたいからfvに重ねている */
+  z-index: 1;
+}
+#header .content_wrapper {
   border: 2px #FFFFFF;
   border-style: none none solid;
-  display: flex;
-  justify-content: center;
-}
-#header_wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -56,9 +56,9 @@ a {
   font-size: 1.6rem;
 }
 .nav_list {
-  display: flex;
   margin-right: 122px;
   width: 267px;
+  display: flex;
   justify-content: space-between;
 }
 .nav_item a {
@@ -70,20 +70,19 @@ a {
 /* --------------------------------------------------------- */
 #first_view {
   height: 100vh;
-  background-color: #1B1310;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background-image: url(../img/fv-bgi@2x.jpg);
   background-size: cover;
   background-position: center center;
 }
+#first_view .content_wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .main_copy_container {
-  border-color: #FFFFFF;
-  border-style: solid;
-  border-width: 2px;
   width: 449px;
   height: 136px;
+  border: 2px solid #FFFFFF;
   display: flex;
   justify-content: center;
   align-items: center; /* TODO headerの高さを差し引いて中央寄せ */
