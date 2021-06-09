@@ -7,6 +7,10 @@ html {
 a {
   text-decoration: none;
 }
+.section_wrapper {
+  display: flex;
+  justify-content: center;
+}
 .content_wrapper {
   max-width: 1200px;
   width: 100%;
@@ -26,7 +30,7 @@ a {
 /* --------------------------------------------------------- */
 /* header
 /* --------------------------------------------------------- */
-header {
+.header {
   background-color: #1B1310;
   position: absolute;
   width: 100%;
