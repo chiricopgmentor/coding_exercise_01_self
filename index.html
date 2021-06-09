@@ -5,63 +5,69 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://unpkg.com/sanitize.css" rel="stylesheet" />
+    <!-- TODO Font読み込み -->
     <link rel="stylesheet" href="./css/style.css" />
     <title>クリ★スタコーディング課題初級編</title>
   </head>
   <body>
     <header class="header" id="header">
-      <h1 class="site_title">クリ★スタ</h1>
-      <nav class="header_nav">
-        About
-        Service
-        Contents
-      </nav>
+      <div class="content_wrapper" id="header_wrapper">
+        <h1 class="site_title"><a href="./index.html">クリ★スタ</a></h1>
+        <nav class="header_nav">
+          <ul class="nav_list">
+            <li class="nav_item"><a href="#!">About</a></li>
+            <li class="nav_item"><a href="#!">Service</a></li>
+            <li class="nav_item"><a href="#!">Contents</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <main class="main">
-    <!-- first_view -->
-    Cresta Design.
-    <!-- //first_view -->
+      <!-- first_view -->
+      <section class="section_wrapper" id="first_view">
+        <div class="main_copy_container">
+          <h2 class="main_copy">Cresta Design.</h2>
+        </div>
+      </section>
+      <!-- //first_view -->
 
-    <!-- about -->
-    About
-    ミニマルで
-    洗練されたデザインを。
-    近年、ミニマルなデザインが流行しています。そこで弊社では、クライアント企業様新規サービス等の課題に対してミニマルで洗練されたデザインを実現させることで解決のサポートを致します。もちろん全てのサービスにおいてミニマルなデザインが課題解決になるわけではないので、課題や今後のサービスの展開等しっかりとヒアリングを行なった上でご提案させて頂きます。
-    <!-- //about -->
+      <!-- about -->
+      <section class="section_wrapper" id="about">
+        <div class="content_wrapper">
+          <h2 class="section_title">About</h2>
+          <div class="lead_container">
+            <p class="content_lead">ミニマルで 洗練されたデザインを。</p>
+          </div>
+          <div class="text_inner">
+            <p class="content_text">
+              近年、ミニマルなデザインが流行しています。そこで弊社では、クライアント企業様新規サービス等の課題に対してミニマルで洗練されたデザインを実現させることで解決のサポートを致します。もちろん全てのサービスにおいてミニマルなデザインが課題解決になるわけではないので、課題や今後のサービスの展開等しっかりとヒアリングを行なった上でご提案させて頂きます。
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- //about -->
 
-    <!-- service -->
-    Service
-    リリース時のサポートで
-    サービスのブランディングを
-    弊社では、リリース時もサポートさせて頂きます。プレスリリース用のサイトや動画制作を通して、サービスのブランディングを行わせて頂きます。
-    
-    リリース後のサポートで
-    効果を最大化させる
-    弊社では、リリース後もサポートさせて頂きます。サービスはリリース後に様々な課題にぶつかります。そこでクライアント様と一緒に改善を行うことで、デザインの効果を最大化させます。
-    <!-- //service -->
+      <!-- service -->
+      Service リリース時のサポートで サービスのブランディングを
+      弊社では、リリース時もサポートさせて頂きます。プレスリリース用のサイトや動画制作を通して、サービスのブランディングを行わせて頂きます。
+      リリース後のサポートで 効果を最大化させる
+      弊社では、リリース後もサポートさせて頂きます。サービスはリリース後に様々な課題にぶつかります。そこでクライアント様と一緒に改善を行うことで、デザインの効果を最大化させます。
+      <!-- //service -->
 
-    <!-- news -->
-    News
-    新規サイトを公開しました。今回のサイトは白と黒を基調にしたミニマルなデザインになっています。
-    新規サイトを公開しました。今回のサイトは白と黒を基調にしたミニマルなデザインになっています。
-    新規サイトを公開しました。今回のサイトは白と黒を基調にしたミニマルなデザインになっています。
-    <!-- //news -->
+      <!-- news -->
+      News
+      新規サイトを公開しました。今回のサイトは白と黒を基調にしたミニマルなデザインになっています。
+      新規サイトを公開しました。今回のサイトは白と黒を基調にしたミニマルなデザインになっています。
+      新規サイトを公開しました。今回のサイトは白と黒を基調にしたミニマルなデザインになっています。
+      <!-- //news -->
 
-    <!-- contact -->
-    お問い合わせ
-    担当者名
-    電話番号
-    メールアドレス
-    お問い合わせ内容
-    
-    送信
-    <!-- //contact -->
+      <!-- contact -->
+      お問い合わせ 担当者名 電話番号 メールアドレス お問い合わせ内容 送信
+      <!-- //contact -->
     </main>
 
-    <footer class="footer">
-      ©︎crest.design all rights reserved
-    </footer>
+    <footer class="footer">©︎crest.design all rights reserved</footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="./js/script.js"></script>
   </body>

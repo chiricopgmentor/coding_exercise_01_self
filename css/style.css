@@ -1,9 +1,94 @@
-body {
-  font-size: 62.5%;
+/* --------------------------------------------------------- */
+/* base
+/* --------------------------------------------------------- */
+html {
+  font-size: 62.5%; /* 1remを10pxにするため */
 }
-.header {
+a {
+  text-decoration: none;
+}
+.content_wrapper {
+  max-width: 1200px;
+  width: 100%;
+}
+.section_title {
+  font-size: 3.6rem;
+  text-align: center;
+  margin: 99px 0 73px;
+}
+.content_lead {
+  font-size: 2.4rem;
+}
+.content_text {
+  font-size: 1.4rem;
+}
+
+/* --------------------------------------------------------- */
+/* header
+/* --------------------------------------------------------- */
+header {
+  background-color: #1B1310;
+  position: absolute;
+  width: 100%;
+  height: 74px;
+  border: 2px #FFFFFF;
+  border-style: none none solid;
   display: flex;
+  justify-content: center;
+}
+#header_wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.site_title {
+  font-size: 2.6rem;
+  margin: 19px 0 20px 120px;
+}
+.site_title a {
+  color: #FFFFFF;
 }
 .header_nav {
   font-size: 1.6rem;
 }
+.nav_list {
+  display: flex;
+  margin-right: 122px;
+  width: 267px;
+  justify-content: space-between;
+}
+.nav_item a {
+  color: #FFFFFF;
+}
+
+/* --------------------------------------------------------- */
+/* first_view
+/* --------------------------------------------------------- */
+#first_view {
+  height: 100vh;
+  background-color: #1B1310;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../img/fv-bgi@2x.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+.main_copy_container {
+  border-color: #FFFFFF;
+  border-style: solid;
+  border-width: 2px;
+  width: 449px;
+  height: 136px;
+  display: flex;
+  justify-content: center;
+  align-items: center; /* TODO headerの高さを差し引いて中央寄せ */
+}
+.main_copy {
+  font-size: 5rem;
+  color: #FFFFFF;
+}
+
+/* --------------------------------------------------------- */
+/* about
+/* --------------------------------------------------------- */
