@@ -125,3 +125,19 @@ a {
 /* --------------------------------------------------------- */
 /* news
 /* --------------------------------------------------------- */
+.content_list {
+  display: flex;
+  justify-content: center;
+}
+.content_item {
+  list-style: none;
+  box-shadow: 0 0 5px 1px #707070;
+  width: 320px;
+  height: 320px;
+  margin-right: 34px;
+}
+.card_wrapper {
+}
+.content_item:last-of-type {
+  margin-right: 0;
+}
