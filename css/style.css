@@ -7,6 +7,10 @@ html {
 a {
   text-decoration: none;
 }
+ul {
+  margin: 0;
+  padding: 0;
+}
 .section_wrapper {
   display: flex;
   justify-content: center;
@@ -120,7 +124,7 @@ a {
 .reverse .text_wrapper {
   margin: 0 70px 0 0;
 }
-/* TODO 画面横幅に合わせて画像を縮小 */
+/* TODO 画面横幅に合わせて画像や要素を縮小 */
 
 /* --------------------------------------------------------- */
 /* news
@@ -136,8 +140,52 @@ a {
   height: 320px;
   margin-right: 34px;
 }
-.card_wrapper {
-}
 .content_item:last-of-type {
   margin-right: 0;
+}
+.card_text {
+  margin: 23px 32px 25px 34px;
+  line-height: 2.5;
+  font-size: 1.3rem;
+  box-sizing: border-box;
+  /* TODO カードテキストがはみ出るのを修正 */
+}
+
+/* --------------------------------------------------------- */
+/* contact
+/* --------------------------------------------------------- */
+#contact .content_wrapper {
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center; */
+}
+#contact .section_title {
+  font-size: 2.4rem;
+  margin: 152px 0 69px;
+}
+.contact_form {
+  display: flex;
+  flex-direction: column;
+  width: 700px;
+  margin-bottom: 50px;
+}
+.contact_form label {
+  line-height: 2.1;
+}
+.contact_form textarea {
+  margin-bottom: 50px;
+}
+.input_text {
+  margin-bottom: 22px;
+}
+#submit_btn {
+border-style: none;
+  width: 235px;
+  height: 59px;
+  font-size: 2rem;
+  color: #FFFFFF;
+  background-color: #1B1310;
+  border-radius: 30px;
+  box-shadow: 0 0 5px 1px #707070;
+  /* TODO 中央寄せ */
 }
