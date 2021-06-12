@@ -11,16 +11,16 @@ ul {
   margin: 0;
   padding: 0;
 }
-.section_wrapper {
+header, /*section,*/ footer{
   display: flex;
   justify-content: center;
   width: 100%;
-  z-index: 0;
+  z-index: 1;
 }
 .content_wrapper {
-  max-width: 1200px;
   width: 100%;
-  padding: 0 85px;
+  max-width: 1200px;
+  /* padding: 0 85px; */
 }
 .section_title {
   font-size: 3.6rem;
@@ -37,7 +37,7 @@ ul {
 /* --------------------------------------------------------- */
 /* header
 /* --------------------------------------------------------- */
-#header {
+header {
   background-color: #1B1310;
   height: 74px;
   border: 2px #FFFFFF;
@@ -45,7 +45,7 @@ ul {
   position: absolute; /* fvと合わせて100vhに収めたいからfvに重ねている */
   z-index: 1;
 }
-#header .content_wrapper {
+header .content_wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -53,7 +53,7 @@ ul {
 }
 .site_title {
   font-size: 2.6rem;
-  margin: 19px 0 20px 120px;
+  /* margin: 19px 0 20px 120px; */
 }
 .site_title a {
   color: #FFFFFF;
@@ -62,7 +62,7 @@ ul {
   font-size: 1.6rem;
 }
 .nav_list {
-  margin-right: 122px;
+  /* margin-right: 122px; */
   width: 267px;
   display: flex;
   justify-content: space-between;
@@ -193,7 +193,7 @@ border-style: none;
 /* --------------------------------------------------------- */
 /* footer
 /* --------------------------------------------------------- */
-#footer {
+footer {
   background-color: #1B1310;
   height: 79px;
   color: #FFFFFF;
