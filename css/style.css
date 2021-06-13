@@ -2,33 +2,23 @@
 /* base
 /* --------------------------------------------------------- */
 html {
-  font-size: 62.5%; /* 1remを10pxにするため */
+  /* 1remを10pxにするため */
+  font-size: 62.5%;
 }
 a {
   text-decoration: none;
   color: #FFFFFF;
 }
-ul {
-  margin: 0;
-  padding: 0;
-}
 header, footer{
   background-color: #1B1310;
-  color: #FFFFFF;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.section_wrapper {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  align-content: center;
-}
 .section_title {
   font-size: 3.6rem;
+  text-align: center;
   margin: 149px 0 71px;
 }
 .content_lead {
@@ -48,11 +38,13 @@ header {
 }
 .header_container {
   width: 100%;
-  max-width: 1200px;
+  /* 15pxは横幅1200px以内の時のmargin */
+  max-width: calc(1200px + 15px * 2);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* TODO 面幅を1200px以下にした時、画面端に15px余白を設ける */
+  /*元々画面端に15pxの余白を作り、表示最大サイズに30pxを足している */
+  margin: 0 15px;
 }
 .site_title {
   font-size: 2.6rem;
@@ -74,8 +66,12 @@ header {
   background-size: cover;
   background-position: center center;
 }
-#first_view .section_wrapper{
+#first_view .section_container{
+  /* 画面の高さ － headerの高さ */
   height: calc(100vh - 74px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .main_copy_container {
   width: 449px;
@@ -187,4 +183,5 @@ border-style: none;
 /* --------------------------------------------------------- */
 footer {
   height: 79px;
+  color: #FFFFFF;
 }
