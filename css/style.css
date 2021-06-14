@@ -28,13 +28,14 @@ footer {
 }
 .section_title {
   font-size: 3.6rem;
-  margin: 149px 0 71px;
+  margin: 150px 0 70px;
+  /* TODO サイトタイトルの上のmarginを0にして、セクションの下にmarginを持たせる */
 }
 .contents_wrapper {
   width: 100%;
-  /* 15pxは横幅1030px以内の時の左右の余白 */
-  max-width: calc(1030px + 15px * 2);
+  /* 左右に15pxの余白を配置して、その分だけ最大幅を増やす*/
   padding: 0 15px;
+  max-width: calc(1030px + 15px * 2);
 }
 .content_lead {
   font-size: 2.4rem;
@@ -42,6 +43,45 @@ footer {
 }
 .content_text {
   font-size: 1.4rem;
+}
+/* card */
+/* 構成要素：card_img card_spaceholder card_text */
+.card {
+  display: flex;
+}
+.card_img {
+  object-fit: cover;
+}
+/* 縦向きカード */
+.card-vertical {
+  flex-direction: column;
+  box-shadow: 0 0 5px 1px #707070;
+}
+.card-vertical > .card_img {
+  height: 62.5%;
+}
+.card-vertical > .card_spaceholder {
+  height: 0%;
+}
+.card-vertical > .card_text {
+  height: 37.5%;
+}
+/* 横向きカード */
+.card-horizontal {
+flex-direction: row;
+}
+.card-horizontal > .card_img {
+  width: 46.6%;
+}
+.card-horizontal > .card_spaceholder {
+  width: 6.8%;
+}
+.card-horizontal > .card_text {
+  width: 46.6%;
+}
+/* 横向きカードの要素の並び順を逆にする属性 */
+.card-horizontal-reverse {
+  flex-direction: row-reverse;
 }
 
 /* --------------------------------------------------------- */
@@ -111,20 +151,7 @@ header {
 /* --------------------------------------------------------- */
 /* service
 /* --------------------------------------------------------- */
-.content_container {
-  display: flex;
-  /* margin-bottom: 50px; */
-}
-.content_container.reverse {
-  flex-direction: row-reverse;
-}
-/* .text_wrapper {
-  margin: 0 0 0 70px;
-}
-.reverse .text_wrapper {
-  margin: 0 70px 0 0;
-} */
-/* TODO 画像サイズ・余白設定 */
+/* TODO 文字余白設定 */
 
 /* --------------------------------------------------------- */
 /* news
@@ -134,9 +161,6 @@ header {
   justify-content: center;
 }
 .content_item {
-  list-style: none;
-  box-shadow: 0 0 5px 1px #707070;
-  width: 33%;
   height: 320px;
   margin-right: 34px;
 }
@@ -147,17 +171,7 @@ header {
 /* .content_item:before {
   padding-top: 100%;
 } */
-.card_img {
-  width: 100%;
-}
-.card_text {
-  margin: 0;
-  padding: 23px 32px 25px 34px;
-  line-height: 2.5;
-  font-size: 1.3rem;
-  box-sizing: border-box;
-  /* TODO カードテキストがはみ出るのを修正 */
-}
+/* TODO 画面横の余白が正しく入らないので対応 */
 
 /* --------------------------------------------------------- */
 /* contact
