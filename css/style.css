@@ -7,22 +7,38 @@ html {
 }
 a {
   text-decoration: none;
-  color: #FFFFFF;
+  color: #ffffff;
 }
-header, footer{
-  background-color: #1B1310;
+ul {
+  padding: 0;
+  margin: 0;
+}
+header,
+footer {
+  background-color: #1b1310;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+.section_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .section_title {
   font-size: 3.6rem;
-  text-align: center;
   margin: 149px 0 71px;
+}
+.contents_wrapper {
+  width: 100%;
+  /* 15pxは横幅1030px以内の時の左右の余白 */
+  max-width: calc(1030px + 15px * 2);
+  padding: 0 15px;
 }
 .content_lead {
   font-size: 2.4rem;
+  margin-bottom: 42px;
 }
 .content_text {
   font-size: 1.4rem;
@@ -33,31 +49,30 @@ header, footer{
 /* --------------------------------------------------------- */
 header {
   height: 74px;
-  border: 2px #FFFFFF;
+  border: 2px #ffffff;
   border-style: none none solid;
 }
 .header_container {
   width: 100%;
-  /* 15pxは横幅1200px以内の時のmargin */
+  /* 15pxは横幅1200px以内の時の左右の余白 */
   max-width: calc(1200px + 15px * 2);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /*元々画面端に15pxの余白を作り、表示最大サイズに30pxを足している */
-  margin: 0 15px;
+  padding: 0 15px;
 }
 .site_title {
   font-size: 2.6rem;
 }
 .nav_list {
-  width: 267px;
+  width: 269px;
+  height: 21px;
   display: flex;
   justify-content: space-between;
 }
 .nav_item {
   font-size: 1.6rem;
 }
-
 /* --------------------------------------------------------- */
 /* first_view
 /* --------------------------------------------------------- */
@@ -66,7 +81,7 @@ header {
   background-size: cover;
   background-position: center center;
 }
-#first_view .section_container{
+#first_view .section_container {
   /* 画面の高さ － headerの高さ */
   height: calc(100vh - 74px);
   display: flex;
@@ -76,14 +91,14 @@ header {
 .main_copy_container {
   width: 449px;
   height: 136px;
-  border: 2px solid #FFFFFF;
+  border: 2px solid #ffffff;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .main_copy {
   font-size: 5rem;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 /* --------------------------------------------------------- */
@@ -92,27 +107,24 @@ header {
 #about .section_title {
   margin: 99px 0 73px;
 }
-.lead_container {
-  margin-bottom: 42px;
-}
 
 /* --------------------------------------------------------- */
 /* service
 /* --------------------------------------------------------- */
-.content_inner {
+.content_container {
   display: flex;
-  margin-bottom: 50px;
+  /* margin-bottom: 50px; */
 }
-.content_inner.reverse {
+.content_container.reverse {
   flex-direction: row-reverse;
 }
-.text_wrapper {
+/* .text_wrapper {
   margin: 0 0 0 70px;
 }
 .reverse .text_wrapper {
   margin: 0 70px 0 0;
-}
-/* TODO 画面横幅に合わせて画像や要素を縮小 */
+} */
+/* TODO 画像サイズ・余白設定 */
 
 /* --------------------------------------------------------- */
 /* news
@@ -124,15 +136,23 @@ header {
 .content_item {
   list-style: none;
   box-shadow: 0 0 5px 1px #707070;
-  width: 320px;
+  width: 33%;
   height: 320px;
   margin-right: 34px;
 }
 .content_item:last-of-type {
   margin-right: 0;
 }
+/* TODO 縮小しても正方形にする */
+/* .content_item:before {
+  padding-top: 100%;
+} */
+.card_img {
+  width: 100%;
+}
 .card_text {
-  margin: 23px 32px 25px 34px;
+  margin: 0;
+  padding: 23px 32px 25px 34px;
   line-height: 2.5;
   font-size: 1.3rem;
   box-sizing: border-box;
@@ -142,7 +162,7 @@ header {
 /* --------------------------------------------------------- */
 /* contact
 /* --------------------------------------------------------- */
-#contact .content_wrapper {
+#contact .contents_wrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -166,13 +186,13 @@ header {
 .input_text {
   margin-bottom: 22px;
 }
-#submit_btn {
-border-style: none;
+.submit_btn {
+  border-style: none;
   width: 235px;
   height: 59px;
   font-size: 2rem;
-  color: #FFFFFF;
-  background-color: #1B1310;
+  color: #ffffff;
+  background-color: #1b1310;
   border-radius: 30px;
   box-shadow: 0 0 5px 1px #707070;
   /* TODO 中央寄せ */
@@ -183,5 +203,5 @@ border-style: none;
 /* --------------------------------------------------------- */
 footer {
   height: 79px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
