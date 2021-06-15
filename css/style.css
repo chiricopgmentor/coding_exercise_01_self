@@ -53,17 +53,17 @@ footer {
   object-fit: cover;
 }
 /* 縦向きカード */
-.card-vertical {
+.card--vertical {
   flex-direction: column;
   box-shadow: 0 0 5px 1px #707070;
 }
-.card-vertical > .card__img {
+.card--vertical > .card__img {
   height: 62.5%;
 }
-.card-vertical > .card__spaceholder {
+.card--vertical > .card__spaceholder {
   height: 0%;
 }
-.card-vertical > .card__text {
+.card--vertical > .card__text {
   height: 37.5%;
 }
 /* 横向きカード */
