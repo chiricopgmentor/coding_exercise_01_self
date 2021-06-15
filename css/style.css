@@ -65,6 +65,7 @@ footer {
 }
 .card--vertical > .card__text {
   height: 37.5%;
+  padding: 25px 33px;
 }
 /* 横向きカード */
 .card--horizontal {
@@ -171,7 +172,6 @@ header {
 /* .content_item:before {
   padding-top: 100%;
 } */
-/* TODO 画面横の余白が正しく入らないので対応 */
 
 /* --------------------------------------------------------- */
 /* contact
