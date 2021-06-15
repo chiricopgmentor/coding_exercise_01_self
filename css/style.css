@@ -45,11 +45,11 @@ footer {
   font-size: 1.4rem;
 }
 /* card */
-/* 構成要素：card_img card_spaceholder card_text */
+/* 構成要素：card__img card__spaceholder card__text */
 .card {
   display: flex;
 }
-.card_img {
+.card__img {
   object-fit: cover;
 }
 /* 縦向きカード */
@@ -57,26 +57,26 @@ footer {
   flex-direction: column;
   box-shadow: 0 0 5px 1px #707070;
 }
-.card-vertical > .card_img {
+.card-vertical > .card__img {
   height: 62.5%;
 }
-.card-vertical > .card_spaceholder {
+.card-vertical > .card__spaceholder {
   height: 0%;
 }
-.card-vertical > .card_text {
+.card-vertical > .card__text {
   height: 37.5%;
 }
 /* 横向きカード */
 .card-horizontal {
 flex-direction: row;
 }
-.card-horizontal > .card_img {
+.card-horizontal > .card__img {
   width: 46.6%;
 }
-.card-horizontal > .card_spaceholder {
+.card-horizontal > .card__spaceholder {
   width: 6.8%;
 }
-.card-horizontal > .card_text {
+.card-horizontal > .card__text {
   width: 46.6%;
 }
 /* 横向きカードの要素の並び順を逆にする属性 */
