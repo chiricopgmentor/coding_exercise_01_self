@@ -2,7 +2,7 @@
 /* base
 /* --------------------------------------------------------- */
 html {
-  /* 1remを10pxにするため */
+  /* 1remを10pxにする */
   font-size: 62.5%;
 }
 a {
@@ -67,20 +67,20 @@ footer {
   height: 37.5%;
 }
 /* 横向きカード */
-.card-horizontal {
+.card--horizontal {
 flex-direction: row;
 }
-.card-horizontal > .card__img {
+.card--horizontal > .card__img {
   width: 46.6%;
 }
-.card-horizontal > .card__spaceholder {
+.card--horizontal > .card__spaceholder {
   width: 6.8%;
 }
-.card-horizontal > .card__text {
+.card--horizontal > .card__text {
   width: 46.6%;
 }
 /* 横向きカードの要素の並び順を逆にする属性 */
-.card-horizontal-reverse {
+.card--horizontal--reverse {
   flex-direction: row-reverse;
 }
 
