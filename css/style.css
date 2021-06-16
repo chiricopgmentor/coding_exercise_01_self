@@ -36,7 +36,6 @@ body {
 .section_title {
   font-size: 3.6rem;
   margin: 150px 0 70px;
-  /* TODO サイトタイトルの上のmarginを0にして、セクションの下にmarginを持たせる */
 }
 .contents_wrapper {
   width: 100%;
