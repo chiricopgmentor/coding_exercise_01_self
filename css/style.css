@@ -2,28 +2,32 @@
 /* base
 /* --------------------------------------------------------- */
 html {
-  /* 1remを10pxにする */
+  /* 1remを10pxに */
   font-size: 62.5%;
 }
 body {
-  font-family: 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', 'Noto Sans JP', sans-serif, 'Roboto', 'Avenir';
+  font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3",
+   "Noto Sans JP",sans-serif,
+   "Roboto", "Avenir";
 }
-a {
-  text-decoration: none;
-  color: #ffffff;
-}
-ul {
-  padding: 0;
-  margin: 0;
-}
-header,
-footer {
+/* ヘッダーとフッターの装飾 */
+.ribbon {
   background-color: #1b1310;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+.ribbon--header {
+  height: 74px;
+  border: 2px #ffffff;
+  border-style: none none solid;
+}
+.ribbon--footer {
+  height: 79px;
+  color: #ffffff;
+}
+/* //ヘッダーとフッターの装飾 */
 .section_container {
   display: flex;
   flex-direction: column;
@@ -78,7 +82,7 @@ footer {
 }
 /* 横向きカード */
 .card--horizontal {
-flex-direction: row;
+  flex-direction: row;
 }
 .card--horizontal > .card__img {
   width: 46.6%;
@@ -93,15 +97,11 @@ flex-direction: row;
 .card--horizontal--reverse {
   flex-direction: row-reverse;
 }
+/* //card */
 
 /* --------------------------------------------------------- */
 /* header
 /* --------------------------------------------------------- */
-header {
-  height: 74px;
-  border: 2px #ffffff;
-  border-style: none none solid;
-}
 .header_container {
   width: 100%;
   /* 15pxは横幅1200px以内の時の左右の余白 */
@@ -115,6 +115,8 @@ header {
   font-size: 2.6rem;
 }
 .nav_list {
+  padding: 0;
+  margin: 0;
   width: 269px;
   height: 21px;
   display: flex;
@@ -123,6 +125,14 @@ header {
 .nav_item {
   font-size: 1.6rem;
 }
+.nav_item::before {
+  content: "";
+}
+.in_site_link {
+  text-decoration: none;
+  color: #ffffff;
+}
+
 /* --------------------------------------------------------- */
 /* first_view
 /* --------------------------------------------------------- */
@@ -226,7 +236,3 @@ header {
 /* --------------------------------------------------------- */
 /* footer
 /* --------------------------------------------------------- */
-footer {
-  height: 79px;
-  color: #ffffff;
-}
