@@ -45,7 +45,7 @@ body {
 .content_lead {
   font-size: 2.4rem;
   letter-spacing: 10;
-  line-height: 4.8;
+  line-height: 2;
   margin-bottom: 42px;
 }
 .content_text {
@@ -54,9 +54,15 @@ body {
   line-height: 3;
 }
 @media screen and (max-width: 768px) {
+  .section_title {
+    margin-top: 100px;
+  }
   .content_lead {
     font-size: 2.0rem;
-    line-height: 4;
+    margin-bottom: 31px;
+  }
+  .content_text {
+    margin-bottom: 50px;
   }
 }
 /* card */
@@ -80,7 +86,6 @@ body {
 }
 .card--vertical > .card__text {
   height: 37.5%;
-  /* padding: 25px 33px; */
   padding: 4% 10%;
   line-height: 2.5;
   font-size: 1.3rem;
@@ -106,14 +111,21 @@ body {
   flex-direction: row-reverse;
 }
 @media screen and (max-width: 768px) {
+  .card {
+    margin-bottom: 50px;
+  }
   .card--horizontal {
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
   .card--horizontal > .card__img {
     width: 100%;
   }
   .card--horizontal > .card__text {
     width: 100%;
+  }
+  .card__text > .content_text {
+    margin-bottom: 40px;
+  }
 }
 /* //card */
 
@@ -183,6 +195,9 @@ body {
   color: #ffffff;
 }
 @media screen and (max-width: 768px) {
+  #first_view {
+    background-image: url(../img/fv-bgi_sp@2x.jpg);
+  }
   .main_copy_container {
     width: 300px;
     height: 100px;
