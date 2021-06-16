@@ -5,6 +5,9 @@ html {
   /* 1remを10pxにする */
   font-size: 62.5%;
 }
+body {
+  font-family: 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', 'Noto Sans JP', sans-serif, 'Roboto', 'Avenir';
+}
 a {
   text-decoration: none;
   color: #ffffff;
@@ -65,7 +68,13 @@ footer {
 }
 .card--vertical > .card__text {
   height: 37.5%;
-  padding: 25px 33px;
+  /* padding: 25px 33px; */
+  padding: 4% 10%;
+  line-height: 2.5;
+  font-size: 1.3rem;
+}
+.card--vertical > .card__text > p {
+  margin: 0;
 }
 /* 横向きカード */
 .card--horizontal {
@@ -152,7 +161,6 @@ header {
 /* --------------------------------------------------------- */
 /* service
 /* --------------------------------------------------------- */
-/* TODO 文字余白設定 */
 
 /* --------------------------------------------------------- */
 /* news
@@ -162,16 +170,15 @@ header {
   justify-content: center;
 }
 .content_item {
-  height: 320px;
-  margin-right: 34px;
+  /* height: 320px;
+  margin-right: 34px; */
+  height: 31.06%;
+  width: 31.06%;
+  margin-right: 3.3%;
 }
 .content_item:last-of-type {
   margin-right: 0;
 }
-/* TODO 縮小しても正方形にする */
-/* .content_item:before {
-  padding-top: 100%;
-} */
 
 /* --------------------------------------------------------- */
 /* contact
@@ -188,8 +195,13 @@ header {
 .contact_form {
   display: flex;
   flex-direction: column;
-  width: 700px;
+  align-items: center;
   margin-bottom: 50px;
+}
+.contact_form_body {
+  display: flex;
+  flex-direction: column;
+  width: 700px;
 }
 .contact_form label {
   line-height: 2.1;
@@ -209,7 +221,6 @@ header {
   background-color: #1b1310;
   border-radius: 30px;
   box-shadow: 0 0 5px 1px #707070;
-  /* TODO 中央寄せ */
 }
 
 /* --------------------------------------------------------- */

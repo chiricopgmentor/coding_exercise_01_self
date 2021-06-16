@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://unpkg.com/sanitize.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@700&family=Roboto:wght@500&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="./css/style.css" />
     <title>クリ★スタコーディング課題初級編</title>
   </head>
@@ -99,7 +101,11 @@
             <div class="contents_wrapper">
               <ul class="content_list">
                 <li class="content_item card card--vertical">
-                  <img src="./img/card-image1@2x.jpg" alt="暗い背景に並べられたスマホや時計" class="card__img" />
+                  <img
+                    src="./img/card-image1@2x.jpg"
+                    alt="暗い背景に並べられたスマホや時計"
+                    class="card__img"
+                  />
                   <span class="card__spaceholder"></span>
                   <div class="card__text">
                     <p>
@@ -108,7 +114,11 @@
                   </div>
                 </li>
                 <li class="content_item card card--vertical">
-                  <img src="./img/card-image2@2x.jpg" alt="暗闇の中で光るスマホ画面" class="card__img" />
+                  <img
+                    src="./img/card-image2@2x.jpg"
+                    alt="暗闇の中で光るスマホ画面"
+                    class="card__img"
+                  />
                   <span class="card__spaceholder"></span>
                   <div class="card__text">
                     <p>
@@ -117,7 +127,11 @@
                   </div>
                 </li>
                 <li class="content_item card card--vertical">
-                  <img src="./img/card-image3@2x.jpg" alt="暗闇の中で光るノートPC" class="card__img" />
+                  <img
+                    src="./img/card-image3@2x.jpg"
+                    alt="暗闇の中で光るノートPC"
+                    class="card__img"
+                  />
                   <span class="card__spaceholder"></span>
                   <div class="card__text">
                     <p>
@@ -136,34 +150,36 @@
           <div class="section_container">
             <h2 class="section_title">お問い合わせ</h2>
             <form action="" class="contact_form">
-              <label for="contact_person_name">担当者名</label>
-              <input
-                type="text"
-                name="担当者名"
-                class="input_text"
-                id="contact_person_name"
-              />
-              <label for="contact_phone">電話番号</label>
-              <input
-                type="text"
-                name="電話番号"
-                class="input_text"
-                id="contact_phone"
-              />
-              <label for="contact_email">メールアドレス</label>
-              <input
-                type="text"
-                name="メールアドレス"
-                class="input_text"
-                id="contact_email"
-              />
-              <label for="contact_body">お問い合わせ内容</label>
-              <textarea
-                name="お問い合わせ内容"
-                id="contact_body"
-                cols="30"
-                rows="10"
-              ></textarea>
+              <div class="contact_form_body">
+                <label for="contact_person_name">担当者名</label>
+                <input
+                  type="text"
+                  name="担当者名"
+                  class="input_text"
+                  id="contact_person_name"
+                />
+                <label for="contact_phone">電話番号</label>
+                <input
+                  type="text"
+                  name="電話番号"
+                  class="input_text"
+                  id="contact_phone"
+                />
+                <label for="contact_email">メールアドレス</label>
+                <input
+                  type="text"
+                  name="メールアドレス"
+                  class="input_text"
+                  id="contact_email"
+                />
+                <label for="contact_body">お問い合わせ内容</label>
+                <textarea
+                  name="お問い合わせ内容"
+                  id="contact_body"
+                  cols="30"
+                  rows="10"
+                ></textarea>
+              </div>
               <input type="submit" value="送信" class="submit_btn" />
             </form>
           </div>
