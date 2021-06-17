@@ -58,7 +58,7 @@ body {
     margin-top: 100px;
   }
   .content_lead {
-    font-size: 2.0rem;
+    font-size: 2rem;
     margin-bottom: 31px;
   }
   .content_text {
@@ -72,6 +72,11 @@ body {
 }
 .card__img {
   object-fit: cover;
+}
+@media screen and (max-width: 768px) {
+  .card {
+    margin-bottom: 50px;
+  }
 }
 /* 縦向きカード */
 .card--vertical {
@@ -93,6 +98,11 @@ body {
 .card--vertical > .card__text > p {
   margin: 0;
 }
+@media screen and (max-width: 768px) {
+  .card--vertical {
+    margin: 0 7.5px 50px 7.5px;
+  }
+}
 /* 横向きカード */
 .card--horizontal {
   flex-direction: row;
@@ -111,9 +121,6 @@ body {
   flex-direction: row-reverse;
 }
 @media screen and (max-width: 768px) {
-  .card {
-    margin-bottom: 50px;
-  }
   .card--horizontal {
     flex-direction: column-reverse;
   }
@@ -239,6 +246,8 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    padding: 0 7.5px;
   }
   .content_item {
     width: 100%;
