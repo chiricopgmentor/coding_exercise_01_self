@@ -71,7 +71,8 @@ body {
   display: flex;
 }
 .card__img {
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 @media screen and (max-width: 768px) {
   .card {
