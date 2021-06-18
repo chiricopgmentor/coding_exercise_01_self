@@ -6,13 +6,13 @@ html {
   font-size: 62.5%;
 }
 body {
-  font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "Noto Sans JP",
-    sans-serif, "Roboto", "Avenir";
+  font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "Noto Sans JP", sans-serif, "Roboto", "Avenir";
 }
+/* ハンバーガーメニューオープン時に画面スクロールをロックするための属性 */
 body.noscroll {
   overflow: hidden;
 }
-/* ヘッダーとフッターの装飾 */
+/* ribbon: ページ装飾。ヘッダーとフッターに使用。 */
 .ribbon {
   background-color: #1b1310;
   width: 100%;
@@ -20,12 +20,12 @@ body.noscroll {
   justify-content: center;
   align-items: center;
 }
-.ribbon--header {
+.ribbon--menu-contain {
   height: 74px;
   border: 2px #ffffff;
   border-style: none none solid;
 }
-.ribbon--footer {
+.ribbon--credit {
   height: 79px;
   color: #ffffff;
 }
@@ -77,11 +77,6 @@ body.noscroll {
   -o-object-fit: cover;
   object-fit: cover;
 }
-@media screen and (max-width: 768px) {
-  .card {
-    margin-bottom: 50px;
-  }
-}
 /* 縦向きカード */
 .card--vertical {
   flex-direction: column;
@@ -102,11 +97,6 @@ body.noscroll {
 .card--vertical > .card__text > p {
   margin: 0;
 }
-@media screen and (max-width: 768px) {
-  .card--vertical {
-    margin: 0 7.5px 50px 7.5px;
-  }
-}
 /* 横向きカード */
 .card--horizontal {
   flex-direction: row;
@@ -120,11 +110,16 @@ body.noscroll {
 .card--horizontal > .card__text {
   width: 46.6%;
 }
-/* 横向きカードの要素の並び順を逆にする属性 */
 .card--horizontal--reverse {
   flex-direction: row-reverse;
 }
 @media screen and (max-width: 768px) {
+  .card {
+    margin-bottom: 50px;
+  }
+  .card--vertical {
+    margin: 0 7.5px 50px 7.5px;
+  }
   .card--horizontal {
     flex-direction: column-reverse;
   }
