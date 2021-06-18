@@ -75,7 +75,7 @@ body.noscroll {
 }
 .card__img {
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 @media screen and (max-width: 768px) {
   .card {
@@ -203,29 +203,29 @@ body.noscroll {
 /* メニュー非表示時のハンバーガーボタンの見た目 */
 .hamburger_btn__bar--top {
   transform: translate(0px, -8px);
-  transition: .3s;
+  transition: 0.3s;
 }
 .hamburger_btn__bar--middle {
   opacity: 1;
-  transition: .3s;
+  transition: 0.3s;
 }
 .hamburger_btn__bar--bottom {
   transform: translate(0px, 8px);
-  transition: .3s;
+  transition: 0.3s;
 }
 /* //メニュー非表示時のハンバーガーボタンの見た目 */
 /* メニュー表示時のハンバーガーボタンの見た目 */
-.hamburger_btn__bar--top.hamburger_btn__bar--cross{
-  transform: rotate(.125turn);
-  transition: .3s;
+.hamburger_btn__bar--top.hamburger_btn__bar--cross {
+  transform: rotate(0.125turn);
+  transition: 0.3s;
 }
-.hamburger_btn__bar--middle.hamburger_btn__bar--cross{
+.hamburger_btn__bar--middle.hamburger_btn__bar--cross {
   opacity: 0;
-  transition: .3s;
+  transition: 0.3s;
 }
-.hamburger_btn__bar--bottom.hamburger_btn__bar--cross{
-  transform: rotate(-.125turn);
-  transition: .3s;
+.hamburger_btn__bar--bottom.hamburger_btn__bar--cross {
+  transform: rotate(-0.125turn);
+  transition: 0.3s;
 }
 /* //メニュー表示時のハンバーガーボタンの見た目 */
 @media screen and (max-width: 768px) {
@@ -240,7 +240,7 @@ body.noscroll {
     z-index: 1;
     width: 100vw;
     height: 100vh;
-    background-color: rgba(27, 19, 16, .9);
+    background-color: rgba(27, 19, 16, 0.9);
   }
   .nav_list {
     width: 100%;
