@@ -178,9 +178,12 @@ body {
   width: 25px;
   height: 25px;
   background-color: #1b1310;
+  justify-content: center;
+  align-items: center;
 }
 .hamburger_btn__bar {
   display: block;
+  position: absolute;
   border-style: solid;
   border-color: #ffffff;
   border-width: 1px;
@@ -193,7 +196,7 @@ body {
   transition: .3s;
 }
 .hamburger_btn__bar--middle {
-  transform: translate(0px, 0px);
+  opacity: 1;
   transition: .3s;
 }
 .hamburger_btn__bar--bottom {
@@ -202,19 +205,15 @@ body {
 }
 /* //メニュー非表示時のハンバーガーボタンの見た目 */
 /* メニュー表示時のハンバーガーボタンの見た目 */
-/* TODO クロスが歪んでいるので微修正 */
 .hamburger_btn__bar--top.hamburger_btn__bar--cross{
-  /* transform: translate(0px, 0px); */
   transform: rotate(.125turn);
   transition: .3s;
 }
 .hamburger_btn__bar--middle.hamburger_btn__bar--cross{
-  /* transform: translate(0px, 0px); */
-  display: none;
+  opacity: 0;
   transition: .3s;
 }
 .hamburger_btn__bar--bottom.hamburger_btn__bar--cross{
-  /* transform: translate(0px, 10px); */
   transform: rotate(-.125turn);
   transition: .3s;
 }
@@ -224,7 +223,7 @@ body {
     display: none;
   }
   .hamburger_btn {
-    display: block;
+    display: flex;
   }
 }
 /* --------------------------------------------------------- */
