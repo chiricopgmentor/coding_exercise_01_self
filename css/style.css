@@ -9,6 +9,9 @@ body {
   font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "Noto Sans JP",
     sans-serif, "Roboto", "Avenir";
 }
+body.noscroll {
+  overflow: hidden;
+}
 /* ヘッダーとフッターの装飾 */
 .ribbon {
   background-color: #1b1310;
@@ -226,8 +229,11 @@ body {
 }
 /* //メニュー表示時のハンバーガーボタンの見た目 */
 @media screen and (max-width: 768px) {
+  .header_nav.header_nav--menu_open {
+    display: block;
+  }
   .header_nav {
-    /* display: none; */
+    display: none;
     position: absolute;
     top: 0;
     left: 0;
