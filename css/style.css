@@ -37,7 +37,7 @@ body.noscroll {
 }
 .section_title {
   font-size: 3.6rem;
-  margin: 150px 0 70px;
+  margin: 100px 0 70px;
 }
 .contents_wrapper {
   width: 100%;
@@ -57,21 +57,16 @@ body.noscroll {
   line-height: 3;
 }
 @media screen and (max-width: 768px) {
-  .section_title {
-    margin-top: 100px;
-  }
   .content_lead {
     font-size: 2rem;
     margin-bottom: 31px;
-  }
-  .content_text {
-    margin-bottom: 50px;
   }
 }
 /* card */
 /* 構成要素：card__img card__separater card__text */
 .card {
   display: flex;
+  margin-bottom: 50px;
 }
 .card__img {
   -o-object-fit: cover;
@@ -114,12 +109,6 @@ body.noscroll {
   flex-direction: row-reverse;
 }
 @media screen and (max-width: 768px) {
-  .card {
-    margin-bottom: 50px;
-  }
-  .card--vertical {
-    margin: 0 7.5px 50px 7.5px;
-  }
   .card--horizontal {
     flex-direction: column-reverse;
   }
@@ -298,8 +287,8 @@ body.noscroll {
 /* --------------------------------------------------------- */
 /* about
 /* --------------------------------------------------------- */
-#about .section_title {
-  margin: 99px 0 73px;
+#about .content_text {
+  margin-bottom: 50px;
 }
 
 /* --------------------------------------------------------- */
@@ -333,7 +322,6 @@ body.noscroll {
   }
   .content_item {
     width: 100%;
-    margin-right: 0;
   }
 }
 
@@ -347,7 +335,6 @@ body.noscroll {
 }
 #contact .section_title {
   font-size: 2.4rem;
-  margin: 152px 0 69px;
 }
 .contact_form {
   display: flex;
