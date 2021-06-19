@@ -213,18 +213,19 @@ body.noscroll {
 }
 /* //メニュー表示時のハンバーガーボタンの見た目 */
 @media screen and (max-width: 768px) {
-  .header_nav.header_nav--menu_open {
-    display: block;
-  }
   .header_nav {
-    display: none;
-    position: absolute;
+    margin-left: 100vw;
+    position: fixed;
     top: 0;
     left: 0;
     z-index: 1;
     width: 100vw;
     height: 100vh;
     background-color: rgba(27, 19, 16, 0.9);
+  }
+  .header_nav.header_nav--menu_open {
+    margin-left: 0;
+    transition: .3s;
   }
   .nav_list {
     width: 100%;
@@ -322,6 +323,7 @@ body.noscroll {
   }
   .content_item {
     width: 100%;
+    margin-right: 0;
   }
 }
 
