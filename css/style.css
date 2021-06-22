@@ -110,6 +110,10 @@ body.noscroll {
   flex-direction: row-reverse;
   justify-content: space-between;
 }
+.media__img {
+  -o-object-fit: cover;
+  object-fit: cover;
+}
 .media--reverse {
   flex-direction: row;
 }
